@@ -1,56 +1,55 @@
-# Frontend README.md
+# Backend README.md
 
-# My Fullstack App - Frontend
+# My Fullstack App - Backend
 
-This is the frontend part of the My Fullstack App, built using React. This application communicates with the backend API to provide a seamless user experience.
+This is the backend part of the My Fullstack App project, built with Node.js, Express, and PostgreSQL.
 
-## Getting Started
+## Table of Contents
 
-To get started with the frontend application, follow these steps:
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Database Connection](#database-connection)
+- [Contributing](#contributing)
 
-1. **Clone the repository**:
+## Installation
+
+1. Clone the repository:
    ```
    git clone https://github.com/yourusername/my-fullstack-app.git
    ```
 
-2. **Navigate to the frontend directory**:
+2. Navigate to the backend directory:
    ```
-   cd my-fullstack-app/frontend
+   cd my-fullstack-app/backend
    ```
 
-3. **Install dependencies**:
+3. Install the dependencies:
    ```
    npm install
    ```
 
-4. **Run the application**:
-   ```
-   npm start
-   ```
+4. Set up your PostgreSQL database and update the connection details in `src/db/connection.js`.
 
-   This will start the development server and open the application in your default web browser.
+## Usage
 
-## Folder Structure
+To start the backend server, run:
+```
+npm start
+```
 
-- **src/**: Contains all the source code for the frontend application.
-  - **components/**: Contains reusable React components.
-  - **pages/**: Contains the different pages of the application.
-  - **services/**: Contains API service functions for making requests to the backend.
-  - **index.js**: The entry point of the React application.
+The server will run on `http://localhost:5000` by default.
 
-## Components
+## API Endpoints
 
-- **App.jsx**: The main component that manages routing and state.
-- **Home.jsx**: The landing page component.
+- `GET /api/resource`: Description of the endpoint.
+- `POST /api/resource`: Description of the endpoint.
+- Additional endpoints can be added here.
 
-## API Integration
+## Database Connection
 
-The frontend communicates with the backend API through the functions defined in `src/services/api.js`. Make sure the backend is running to successfully fetch data.
+The backend connects to a PostgreSQL database using the configuration specified in `src/db/connection.js`. Ensure that your database is running and accessible.
 
 ## Contributing
 
-If you would like to contribute to this project, please fork the repository and submit a pull request with your changes.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or features.
